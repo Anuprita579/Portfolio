@@ -44,10 +44,13 @@ body{
     font-size: 15px;
     padding: 0px 20px;
     transition: 0.3s;
+    border-bottom: 2px solid transparent;
 }
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
+    border-bottom: 2px solid #00abf0;
+    border-radius: 1px;
 }
 .home{
     color: var(--text-color);
@@ -71,11 +74,17 @@ body{
     font-size: 25px;
     font-weight: 700;
 }
+.animate h3{
+    -webkit-text-fill-color: #00abf0;
+    transition: -webkit-text-fill-color 10s;
+    animation: 2s ease forwards;
+}
 .home-content p{
     font-size: 14px;
     margin: 10px 5px;
 }
-.home-content .btn-box{
+.home-content .btn-box,
+input[type=submit]{
     background-color: var(--main-color);
     width: 100px;
     height: 50px;
@@ -180,8 +189,13 @@ span{
     width: 15px;
     background-color: var(--main-color);
     z-index: 2;
-    left: 490px;
+    margin-left: -30px;
+    transition: background-color 0.5s;
 }
+.education-content .education-box:hover::before{
+    background-color: white;
+}
+
 .education-content .education-box h3{
     font-size: medium;
     color: var(--text-color);
@@ -248,7 +262,7 @@ span{
     padding: 10px 0px;
     color: var(--text-color);
 }
-input{
+input[type=text]{
     margin: 10px 10px;
     border: 2px solid #00abf0;
     width: 400px;
@@ -258,4 +272,11 @@ textarea{
     margin: 10px 10px;
     border: 2px solid #00abf0;
     width: 400px;   
+}
+footer{
+    color: white;
+    padding: 20px;
+    background-color: #112e42;
+    font-size: medium;
+    text-align: center;
 }
