@@ -15,7 +15,7 @@
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#contactme">Contact</a>
         </nav>
     </header>
 
@@ -23,10 +23,14 @@
         <div class="home-content">
             <h1>Hi. I'm <span>Anuprita Mhapankar</span></h1>
             <div class="text-animate animate">
-                <h3>Aspiring Software Developer</h3>
+                <h3><span id="element"></span></h3>
+                
             </div>
             <p>Coding: Where Logic Becomes Magic.</p>
-            <div class="btn-box">Hire Me</div>
+            <div class="inline-box">
+                <a href="#contactme"><button class="btn-box">Hire Me</button></a>
+                <a href="#"><button class="btn-box">Resume</button></a>
+            </div>
         </div>
     </section>
 
@@ -68,25 +72,55 @@
         <div class="skills-content">
             <h1>My <span>Skills</span></h1>
             <div class="skill-box">
-                <div class="progress">
-                    <div class="bar"><i class='bx bxl-html5' ></i></div>
-                    <h3>HTML</h3>
+                <div class="progress-block">
+                    <h3>HTML <i class="fa-brands fa-html5 fa-fade"></i></h3> <br>
+                    <div class="progress">
+                        <div class="bar html"></div>
+                    </div>
                 </div>
-
-                <div class="progress">
-                    <div class="bar"><i class='bx bxl-css3' ></i></div>
-                    <h3>CSS</h3>
+                <div class="progress-block">
+                    <h3>CSS <i class="fa-brands fa-css3 fa-fade"></i></h3> <br>
+                    <div class="progress">
+                        <div class="bar css"></div>
+                    </div>
                 </div>
-
-                <div class="progress">
-                    <div class="bar"><i class='bx bxl-javascript' ></i></div>
-                    <h3>JAVASCRIPT</h3>
+                <div class="progress-block">
+                    <h3>JAVASCRIPT <i class="fa-brands fa-js fa-fade"></i></h3> <br>
+                    <div class="progress">
+                        <div class="bar js"></div>
+                    </div>
                 </div>
-
-                <div class="progress">
-                    <div class="bar"><i class='bx bxl-jquery' ></i></div>
-                    <h3>JQUERY</h3>
+                <div class="progress-block">
+                    <h3>JQUERY </h3> <br>
+                    <div class="progress">
+                        <div class="bar jquery"></div>
+                    </div>
                 </div>
+                <div class="progress-block">
+                    <h3>MONGODB</h3> <br>
+                    <div class="progress">
+                        <div class="bar mongo"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h3>EXPRESSJS</h3> <br>
+                    <div class="progress">
+                        <div class="bar exjs"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h3>REACTJS <i class="fa-brands fa-react fa-fade"></i></h3> <br>
+                    <div class="progress">
+                        <div class="bar reactjs"></div>
+                    </div>
+                </div>
+                <div class="progress-block">
+                    <h3>NODEJS <i class="fa-brands fa-node-js fa-fade"></i> </h3> <br>
+                    <div class="progress">
+                        <div class="bar nodejs"></div>
+                    </div>
+                </div>
+        
             </div>
 
         </div>
@@ -100,7 +134,7 @@
                 <input type="text" placeholder="EMail Address" required>
                 <input type="text" placeholder="Mobile Number" required>
                 <input type="text" placeholder="EMail Subject" >
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <textarea name="ta" id="ta" cols="30" rows="10" placeholder="Your Message"></textarea>
                 <input type="submit" value="Send" class="btn-box">
             </form>
         </div>
@@ -111,6 +145,15 @@
             <p>Copyright &copy; Anuprita Mhapankar 2023 | All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/6db3972ea0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Aspiring Web developer', 'Aspiring Software Engineer'],
+          typeSpeed: 50,
+        });
+      </script>
 
 </body>
 </html>

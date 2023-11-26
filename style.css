@@ -99,6 +99,7 @@ input[type=submit]{
     cursor: pointer;
     color: var(--bg-color);
     border: 2px solid #00abf0;
+    margin-right: 20px;
 }
 .home-content .btn-box:hover,
 input[type=submit]:hover{
@@ -225,31 +226,65 @@ span{
     color: var(--text-color);
 }
 .skills-content .skill-box{
-    border-top: 4px solid #00abf0;
     color: var(--text-color);
     font-size: medium;
     padding: 20px 0px;
     display: flex;
 }
-.skills-content .progress{
-    margin: 20px 20px;
-    width: 150px;
-}
+
 .skills-content .progress h3{
     font-size: medium;
     color: var(--text-color);
     padding-bottom: 5px;
 }
-.skills-content .progress .bar:hover{
-    color: #00abf0;
-}
-.skills-content .skill-box .progress{
+.skills-content .skill-box{
     border: 2px solid #00abf0;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
 }
-.skills-content .skill-box .bar{
-    font-size: 100px;
+.skills-content .progress-block{
+    display: block;
+    margin: 2px;
+}
+.skills-content .progress{
+    border: 1px solid aqua;
+    height: 25px;
+    width: 95%;
+    margin: 0px 10px;
+}
+.skills-content .bar{
+    height: 10px;
+    background-color: #00abf0;
+    margin: 5px;
 }
 
+.html{
+    width:95%;
+}
+.css{
+    width: 95%;
+}
+.js{
+    width:70%;
+}
+.jquery{
+    width:60%;
+}
+.mongo{
+    width: 10%;
+}
+.reactjs{
+    width: 10%;
+}
+.exjs{
+    width: 60%;
+}
+.nodejs{
+    width: 60%;
+}
 .contactme{
     background-color: transparent;
     text-align: center;
@@ -272,11 +307,13 @@ input[type=text]{
     border: 2px solid #00abf0;
     width: 400px;
     height: 30px;
+    padding-left: 5px;
 }
 textarea{
     margin: 10px 10px;
     border: 2px solid #00abf0;
-    width: 400px;   
+    width: 400px;  
+    padding-left: 5px; 
 }
 footer{
     color: white;
@@ -284,4 +321,14 @@ footer{
     background-color: #112e42;
     font-size: medium;
     text-align: center;
+}
+.btn-box a{
+    text-decoration: none;
+    color: #081b29;
+}
+.btn-box a:hover{
+    color: #00abf0;
+}
+.inline-box{
+    display: flex;
 }
