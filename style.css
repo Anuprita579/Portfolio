@@ -10,12 +10,25 @@
     scroll-behavior: smooth;
     font-family: Poppins, sans-serif;
 }
+/* Dark Mode*/
 :root{
     --bg-color:#081b29;
     --second-bg-color:#112e42;
     --text-color: #ededed;
     --main-color: #00abf0;
+    --second-text : #ffffff
 }
+
+
+/* Light Mode */
+.light-mode {
+    --bg-color: #ffffff;
+    --second-bg-color: #f0f0f0;
+    --text-color: #333333;
+    --main-color: #007bff;
+    --second-text : #081b29
+}
+
 
 html{
     overflow-x: hidden;
@@ -85,7 +98,7 @@ body{
     font-size: 14px;
     margin: 10px 5px;
 }
-.home-content .btn-box,
+.home-content .btn-box, .theme-toggle,
 input[type=submit]{
     background-color: var(--main-color);
     width: 100px;
@@ -108,6 +121,11 @@ input[type=submit]:hover{
     background-color: var(--bg-color);
     color: var(--main-color);
 }
+.theme-toggle{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
 span{
     color: var(--main-color);
 }
@@ -120,7 +138,7 @@ span{
     margin: 30px 0px;
 }
 .about-content{
-    color: white;
+    color: var(--second-text);
     display: flex;
     flex-direction: column;
     justify-content: center;
