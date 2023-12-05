@@ -35,6 +35,13 @@
         width: 70px;
         font-size: 13px;
     }
+    span{
+        font-size: 25px;
+    }
+    #tiltImage {
+        height: 120px;
+        margin: 5px;
+    }
     .education-content .education-box {
         width: 250px;
     }
