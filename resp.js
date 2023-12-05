@@ -42,8 +42,8 @@ function tiltImage(event) {
     const tiltImage = document.getElementById('tiltImage');
   
     tiltImage.style.transform = `
-      rotateX(${y * 50}deg)
-      rotateY(${x * 50}deg)
+      rotateX(${y * 70}deg)
+      rotateY(${x * 70}deg)
     `;
   }
   
