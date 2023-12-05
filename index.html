@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -17,6 +18,7 @@
             <a href="#skills">Skills</a>
             <a href="#contactme">Contact</a>
         </nav>
+        <a href="#" id="menu" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></a>
     </header>
 
     <section class="home" id="home">
@@ -146,6 +148,7 @@
         </div>
     </footer>
 
+    <script src="resp.js"></script>
     <script src="https://kit.fontawesome.com/6db3972ea0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
@@ -156,7 +159,7 @@
             var esubject = document.getElementById('esubject').value;
             var message = document.getElementById('ta').value;
 
-            var mailtoLink = 'mailto:ahuann8@gmail.com' +
+            var mailtoLink = 'mailto:anuprtiamhapankar22@gmail.com' +
                 '?subject=' + encodeURIComponent(esubject) +
                 '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage: ' + message);
 
