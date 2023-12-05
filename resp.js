@@ -33,3 +33,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function tiltImage(event) {
+    const { clientX, clientY } = event;
+    const { left, top, width, height } = event.target.getBoundingClientRect();
+    const x = (clientX - left) / width - 0.5;
+    const y = 0.5 - (clientY - top) / height;
+  
+    const tiltImage = document.getElementById('tiltImage');
+  
+    tiltImage.style.transform = `
+      rotateX(${y * 50}deg)
+      rotateY(${x * 50}deg)
+    `;
+  }
+  
+

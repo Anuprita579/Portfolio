@@ -351,3 +351,26 @@ footer{
 .inline-box{
     display: flex;
 }
+
+.image-container {
+    perspective: 1000px;
+}
+#tiltImage {
+    transition: transform 0.3s ease;
+    height: 160px;
+    margin: 20px;
+}
+.tilt-up {
+    transform: rotateX(-25deg);
+}
+.tilt-down {
+    transform: rotateX(25deg);
+}
+.tilt-left {
+    transform: rotateY(25deg);  
+}
+.tilt-right {
+    transform: rotateY(-25deg);
+}
+  
+  
