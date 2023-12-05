@@ -70,9 +70,6 @@ body{
 .home-content h1{
     font-size: 40px;
 }
-.home-content .text-animate{
-    position: relative;
-}
 .home-content .text-animate h3{
     color: transparent;
     -webkit-text-stroke : 0.7px var(--main-color);
@@ -195,7 +192,6 @@ span{
     height: 15px;
     width: 15px;
     background-color: var(--main-color);
-    z-index: 2;
     margin-left: -30px;
     transition: background-color 0.5s;
 }

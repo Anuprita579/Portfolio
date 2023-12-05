@@ -55,4 +55,10 @@
     footer{
         padding: 15px;
     }
+    .education-content .education-box::before{
+        display: none;
+    }
+    .progress-block i{
+        display: none;
+    }
 }
