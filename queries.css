@@ -1,10 +1,14 @@
 @media only screen and (max-width: 607px)  {
+    body{
+        height: 100%;
+        overflow-x: hidden;
+    }
     .navbar{
         display: flex;
         flex-direction: column;
         background-color: black;
         width: 100%;
-        height: 470px;
+        height: 700px;
         display: none; 
     }
     .navbar a{
