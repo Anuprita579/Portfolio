@@ -2,7 +2,7 @@ function toggleMenu() {
     var navbar = document.querySelector(".navbar");
     navbar.style.display = (navbar.style.display === "flex") ? "none" : "flex";
     var disimg = document.getElementById("tiltImage");
-    disimg.style.display = (disimg.style.display === "block") ? "block" : "none";
+    disimg.style.display = (disimg.style.display === "none") ? "block" : "none";
 
     event.preventDefault();
 }
