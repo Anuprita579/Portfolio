@@ -98,8 +98,7 @@ body{
     font-size: 14px;
     margin: 10px 5px;
 }
-.home-content .btn-box, .theme-toggle,
-input[type=submit]{
+.home-content .btn-box, .theme-toggle, .contactme .btn-box{
     background-color: var(--main-color);
     width: 100px;
     height: 50px;
@@ -117,7 +116,7 @@ input[type=submit]{
     margin-right: 20px;
 }
 .home-content .btn-box:hover,
-input[type=submit]:hover{
+.contactme .btn-box:hover{
     background-color: var(--bg-color);
     color: var(--main-color);
 }
@@ -308,7 +307,7 @@ span{
     background-color: transparent;
     text-align: center;
 }
-.contactme-content .feedback{
+.contactme-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -320,13 +319,6 @@ span{
     font-size: 40px;
     padding: 10px 0px;
     color: var(--text-color);
-}
-input[type=text]{
-    margin: 10px 10px;
-    border: 2px solid #00abf0;
-    width: 400px;
-    height: 30px;
-    padding-left: 5px;
 }
 textarea{
     margin: 10px 10px;

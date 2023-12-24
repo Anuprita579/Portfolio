@@ -139,14 +139,7 @@
     <section class="contactme" id="contactme">
         <div class="contactme-content">
             <h1>Contact <span>Me</span></h1>
-            <form class="feedback" >
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="text" id="email" placeholder="EMail Address" required>
-                <input type="text" id="phone" placeholder="Mobile Number" required>
-                <input type="text" id="esubject" placeholder="EMail Subject" >
-                <textarea name="ta" id="ta" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send" class="btn-box" onclick="sendEmail()">
-            </form>
+            <a href="mailto:anupritamhapankar22@gmail.com"> <button class="btn-box">Mail Me </button></a>
         </div>
     </section>
 
@@ -160,21 +153,6 @@
     <script src="https://kit.fontawesome.com/6db3972ea0.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-        function sendEmail() {
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var phone = document.getElementById('phone').value;
-            var esubject = document.getElementById('esubject').value;
-            var message = document.getElementById('ta').value;
-
-            var mailtoLink = 'mailto:anuprtiamhapankar22@gmail.com' +
-                '?subject=' + encodeURIComponent(esubject) +
-                '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage: ' + message);
-
-            window.location.href = mailtoLink;
-        }
-
-
         var typed = new Typed('#element', {
           strings: ['Aspiring Web developer', 'Aspiring Software Engineer'],
           typeSpeed: 50,
